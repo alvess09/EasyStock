@@ -52,3 +52,23 @@ O principal objetivo é manter um controle eficiente dos itens disponíveis, evi
 
 Clone o repositório, instale as dependências e explore o EasyStock para transformar a forma como você gerencia seu estoque!
 
+
+lib/
+├── main.dart
+├── features/
+│   ├── auth/
+│   │   ├── login_screen.dart
+│   │   └── register_screen.dart
+│   ├── home/
+│   │   ├── home_screen.dart
+│   │   ├── products_screen.dart
+│   │   ├── add_product_screen.dart
+│   │   └── history_screen.dart
+│   └── widgets/
+│       └── custom_widgets.dart
+├── models/
+│   └── product.dart
+├── services/
+│   └── firebase_service.dart
+└── utils/
+    └── app_colors.dart
