@@ -31,16 +31,20 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
-        selectedItemColor: Colors.deepPurple,
+        backgroundColor: const Color.fromARGB(255, 243, 237, 247),
+        selectedItemColor: Colors.black,
         unselectedItemColor: Colors.grey,
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           BottomNavigationBarItem(
-            icon: Icon(Icons.inventory),
+            icon: ImageIcon(AssetImage('assets/images/home.png')),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: ImageIcon(AssetImage('assets/images/products.png')),
             label: 'Produtos',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.history),
+            icon: ImageIcon(AssetImage('assets/images/history.png')),
             label: 'Histórico',
           ),
         ],

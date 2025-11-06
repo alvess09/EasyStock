@@ -1,5 +1,6 @@
 import 'package:easy_stock/features/auth/login_screen.dart';
 import 'package:easy_stock/features/auth/register_screen.dart';
+import 'package:easy_stock/features/home/add_product_screen.dart';
 import 'package:easy_stock/features/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -14,11 +15,12 @@ class EasyStockApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'EasyStock',
-      initialRoute: '/home',
+      initialRoute: '/login',
       routes: {
         '/login': (context) => const LoginScreen(),
         '/register': (context) => const RegisterScreen(),
         '/home': (context) => const HomeScreen(),
+        '/add_product': (context) => const AddProductScreen(),
       },
     );
   }
